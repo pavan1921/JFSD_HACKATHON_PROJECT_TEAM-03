@@ -1,0 +1,26 @@
+/* Base class for badge */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem; /* Replace with $badge-padding-y and $badge-padding-x */
+  font-size: 0.875rem; /* Replace with $badge-font-size */
+  font-weight: 700; /* Replace with $badge-font-weight */
+  line-height: 1;
+  color: #ffffff; /* Replace with $badge-color */
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.375rem; /* Replace with $badge-border-radius */
+  background: linear-gradient(to right, #f39c12, #e74c3c); /* Replace with @include gradient-bg() */
+
+  /* Empty badges collapse automatically */
+}
+
+.badge:empty {
+  display: none;
+}
+
+/* Quick fix for badges in buttons */
+.btn .badge {
+  position: relative;
+  top: -1px;
+}

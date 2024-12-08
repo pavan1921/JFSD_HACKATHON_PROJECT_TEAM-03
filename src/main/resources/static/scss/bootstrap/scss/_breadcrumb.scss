@@ -1,0 +1,33 @@
+/* Breadcrumb container */
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem 1rem; /* Replace with $breadcrumb-padding-y and $breadcrumb-padding-x */
+  margin-bottom: 0.5rem; /* Replace with $breadcrumb-margin-bottom */
+  font-size: 1rem; /* Replace with $breadcrumb-font-size */
+  list-style: none;
+  background-color: #f8f9fa; /* Replace with $breadcrumb-bg */
+  border-radius: 0.25rem; /* Replace with $breadcrumb-border-radius */
+}
+
+/* Individual breadcrumb item */
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item + .breadcrumb-item {
+  padding-left: 0.5rem; /* Replace with $breadcrumb-item-padding-x */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  float: left;
+  padding-right: 0.5rem; /* Replace with $breadcrumb-item-padding-x */
+  color: #6c757d; /* Replace with $breadcrumb-divider-color */
+  content: "/"; /* Replace with $breadcrumb-divider or use custom divider if needed */
+}
+
+/* Active breadcrumb item */
+.breadcrumb-item.active {
+  color: #007bff; /* Replace with $breadcrumb-active-color */
+}

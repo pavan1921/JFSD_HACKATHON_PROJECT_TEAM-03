@@ -1,0 +1,201 @@
+/* Base Card Styles */
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: /* Insert card height value */;
+  word-wrap: break-word;
+  background-color: /* Insert card background color */;
+  background-clip: border-box;
+  border: /* Insert card border width */ solid /* Insert card border color */;
+  border-radius: /* Insert card border radius */;
+
+}
+
+.card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.card > .list-group {
+  border-top: inherit;
+  border-bottom: inherit;
+}
+
+.card > .list-group:first-child {
+  border-top-width: 0;
+  border-top-left-radius: /* Insert inner border radius */;
+  border-top-right-radius: /* Insert inner border radius */;
+}
+
+.card > .list-group:last-child {
+  border-bottom-width: 0;
+  border-bottom-left-radius: /* Insert inner border radius */;
+  border-bottom-right-radius: /* Insert inner border radius */;
+}
+
+.card > .card-header + .list-group,
+.card > .list-group + .card-footer {
+  border-top: 0;
+}
+
+/* Card Body */
+.card-body {
+  flex: 1 1 auto;
+  padding: /* Insert card spacer-y */ /* Insert card spacer-x */;
+  color: /* Insert card color */;
+}
+
+.card-title {
+  margin-bottom: /* Insert card title spacer */;
+}
+
+.card-subtitle {
+  margin-top: -/* Insert card title spacer */ / 2;
+  margin-bottom: 0;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+}
+
+.card-link {
+  &:hover {
+    text-decoration: none;
+  }
+
+  + .card-link {
+    margin-left: /* Insert card spacer-x */;
+  }
+}
+
+/* Optional Textual Caps */
+.card-header {
+  padding: /* Insert card cap padding-y */ /* Insert card cap padding-x */;
+  margin-bottom: 0;
+  color: /* Insert card cap color */;
+  background-color: /* Insert card cap background color */;
+  border-bottom: /* Insert card border width */ solid /* Insert card border color */;
+}
+
+.card-header:first-child {
+  border-radius: /* Insert inner border radius top-left */ /* Insert inner border radius top-right */ 0 0;
+}
+
+.card-footer {
+  padding: /* Insert card cap padding-y */ /* Insert card cap padding-x */;
+  color: /* Insert card cap color */;
+  background-color: /* Insert card cap background color */;
+  border-top: /* Insert card border width */ solid /* Insert card border color */;
+}
+
+.card-footer:last-child {
+  border-radius: 0 0 /* Insert inner border radius bottom-left */ /* Insert inner border radius bottom-right */;
+}
+
+/* Header Navs */
+.card-header-tabs {
+  margin-right: -/* Insert card cap padding-x */ / 2;
+  margin-bottom: -/* Insert card cap padding-y */;
+  margin-left: -/* Insert card cap padding-x */ / 2;
+  border-bottom: 0;
+}
+
+.card-header-tabs .nav-link.active {
+  background-color: /* Insert card background color */;
+  border-bottom-color: /* Insert card background color */;
+}
+
+.card-header-pills {
+  margin-right: -/* Insert card cap padding-x */ / 2;
+  margin-left: -/* Insert card cap padding-x */ / 2;
+}
+
+/* Card Image */
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: /* Insert card img-overlay padding */;
+  border-radius: /* Insert card inner border radius */;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  width: 100%;
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: /* Insert inner border radius */;
+  border-top-right-radius: /* Insert inner border radius */;
+}
+
+.card-img,
+.card-img-bottom {
+  border-bottom-left-radius: /* Insert inner border radius */;
+  border-bottom-right-radius: /* Insert inner border radius */;
+}
+
+/* Card Groups */
+.card-group {
+  display: block;
+}
+
+.card-group > .card {
+  margin-bottom: /* Insert card group margin */;
+}
+
+@media (min-width: 576px) {
+  .card-group {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .card-group > .card {
+    flex: 1 0 0%;
+    margin-bottom: 0;
+  }
+
+  .card-group > .card + .card {
+    margin-left: 0;
+    border-left: 0;
+  }
+
+  .card-group > .card:not(:last-child) {
+    border-right: 0;
+  }
+
+  /* Handle rounded corners for cards */
+  .card-group > .card:not(:last-child) {
+    border-end-radius: 0;
+
+    .card-img-top,
+    .card-header {
+      border-top-right-radius: 0;
+    }
+
+    .card-img-bottom,
+    .card-footer {
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  .card-group > .card:not(:first-child) {
+    border-start-radius: 0;
+
+    .card-img-top,
+    .card-header {
+      border-top-left-radius: 0;
+    }
+
+    .card-img-bottom,
+    .card-footer {
+      border-bottom-left-radius: 0;
+    }
+  }
+}

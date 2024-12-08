@@ -1,0 +1,103 @@
+/* Base button styles */
+.btn {
+  display: inline-block;
+  font-family: /* Insert font-family value */;
+  font-weight: /* Insert font-weight value */;
+  line-height: /* Insert line-height value */;
+  color: /* Insert body color value */;
+  text-align: center;
+  text-decoration: none; /* Adjust based on $link-decoration */
+  white-space: nowrap; /* Adjust based on $btn-white-space */
+  vertical-align: middle;
+  cursor: pointer; /* Adjust based on $enable-button-pointers */
+  user-select: none;
+  background-color: transparent;
+  border: /* Insert button border width */ solid transparent;
+  padding: /* Insert padding values based on button size */;
+  font-size: /* Insert font size value */;
+  border-radius: /* Insert border radius value */;
+  transition: all 0.15s ease; /* Adjust based on $btn-transition */
+
+}
+
+.btn:hover {
+  color: /* Insert body color value */;
+  text-decoration: none; /* Adjust based on $link-hover-decoration */
+}
+
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: /* Insert focus box-shadow value */;
+}
+
+.btn-check:checked + .btn,
+.btn-check:active + .btn,
+.btn:active,
+.btn.active {
+  box-shadow: /* Insert active box-shadow value */;
+
+  &:focus {
+    box-shadow: /* Insert focus and active box-shadow value */;
+  }
+}
+
+.btn:disabled,
+.btn.disabled,
+fieldset:disabled .btn {
+  pointer-events: none;
+  opacity: /* Insert disabled opacity value */;
+  box-shadow: none;
+}
+
+/* Button variants: Generates contextually-colored buttons */
+.btn-variant-loops {
+  /* For each theme color */
+  .btn-/* Insert color */ {
+    background-color: /* Insert background color */;
+    border-color: /* Insert border color */;
+    color: /* Insert text color */;
+  }
+}
+
+/* Outline button variants */
+.btn-outline-/* Insert color */ {
+  background-color: transparent;
+  border-color: /* Insert border color */;
+  color: /* Insert text color */;
+  /* Add hover and focus styles as needed */
+}
+
+/* Link buttons */
+.btn-link {
+  font-weight: normal;
+  color: /* Insert link color */;
+  text-decoration: none; /* Adjust based on $link-decoration */
+
+  &:hover {
+    color: /* Insert link hover color */;
+    text-decoration: underline; /* Adjust based on $link-hover-decoration */
+  }
+
+  &:focus {
+    text-decoration: underline; /* Adjust based on $link-hover-decoration */
+  }
+
+  &:disabled,
+  .btn-link.disabled {
+    color: /* Insert link disabled color */;
+  }
+}
+
+/* Button Sizes */
+.btn-lg {
+  padding: /* Insert large button padding */;
+  font-size: /* Insert large font size */;
+  border-radius: /* Insert large border radius */;
+}
+
+.btn-sm {
+  padding: /* Insert small button padding */;
+  font-size: /* Insert small font size */;
+  border-radius: /* Insert small border radius */;
+}

@@ -1,0 +1,180 @@
+/* General Heading Styles */
+h2, h3, h4, h5, h6 {
+    margin: 5px 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #333; /* Dark gray for the heading */
+}
+
+/* Body Styling */
+body {
+    background-color: #f0f0f5; /* Light gray background */
+    background-attachment: scroll;
+    background-image: none;
+    background-position: center top;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif; /* More modern font */
+    color: #333; /* Dark text for readability */
+}
+
+/* Subprograms Title */
+.subprograms .title {
+    background: #7a4dff; /* Purple background */
+    color: #fff;
+    font-size: 1.4em;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Button and Title Alignment on Smaller Screens */
+@media only screen and (max-width: 1340px) {
+    .button, h1.title, h3.title {
+        text-align: center;
+    }
+}
+
+h1.title, h3.title, nav.top>ul {
+    text-transform: uppercase;
+}
+
+h3.title {
+    font-size: 1.1em;
+    margin: 10px 0;
+    padding: 5px 0;
+    background: #dcdcdc; /* Light gray background */
+    color: #333;
+}
+
+h1.title, h3.title {
+    text-indent: 10px;
+}
+
+/* List Item Styling */
+li {
+    color: #444; /* Slightly darker for list items */
+}
+
+/* Subprograms Wrapper */
+.subprograms-wrapper {
+    background: linear-gradient(#ff7f50, #ffcc00); /* Gradient from coral to yellow */
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.button {
+    width: auto;
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    background-color: #28a745; /* Green button */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Right Float Class */
+.right {
+    float: right;
+    display: block;
+    margin: 10px;
+}
+
+/* Link Styling */
+a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: underline;
+}
+
+/* Content Wrapper Styling */
+#content-wrapper {
+    overflow: auto;
+    max-width: 2000px;
+    min-height: 500px;
+    width: 100%;
+}
+
+/* Form Styling */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+}
+
+.card {
+    padding: 40px 40px;
+    width: 400px;
+    margin-top: 100px;
+    border: none !important;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.blue-text {
+    color: #007bff; /* Blue color for blue text */
+}
+
+.form-control-label {
+    margin-bottom: 0;
+}
+
+input, textarea, select, button {
+    padding: 10px 20px;
+    border-radius: 5px !important;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    font-size: 16px !important;
+    font-weight: 300;
+}
+
+input:focus, textarea:focus, select:focus {
+    box-shadow: none !important;
+    border: 1px solid #007bff; /* Blue border on focus */
+    outline-width: 0;
+    font-weight: 400;
+}
+
+.btn-block {
+    font-size: 16px !important;
+    font-weight: 400;
+    height: 45px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-block:hover {
+    color: #fff !important;
+}
+
+button:focus {
+    box-shadow: none !important;
+    outline-width: 0;
+}
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@400;600&display=swap');

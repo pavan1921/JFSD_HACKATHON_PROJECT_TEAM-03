@@ -1,0 +1,132 @@
+/* Global Resets */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Block-level Elements */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle, #c6f6d5, #e9d8fd);  /* Updated background */
+    color: #333;  /* Updated text color for better readability */
+    line-height: 1.7;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.2em;
+    color: #2d3748;  /* Darker gray for heading */
+    text-align: left;
+    margin-bottom: 1.2rem;
+    font-weight: 600;
+    border-bottom: 2px solid #e9d8fd;  /* Soft border below heading */
+    padding-bottom: 0.5rem;
+}
+
+a {
+    color: #3182ce;  /* Blue color for links */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #2b6cb0;  /* Darker blue for hover state */
+}
+
+/* Inputs & Buttons */
+input[type="text"], input[type="email"], input[type="password"] {
+    font-size: 1rem;
+    padding: 0.7em;
+    width: 100%;
+    margin: 0.7rem 0;
+    border: 2px solid #e2e8f0;  /* Light gray border */
+    border-radius: 8px;
+    background: #f7fafc;  /* Light background for inputs */
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border: 2px solid #3182ce;  /* Blue border on focus */
+    outline: none;
+    background: #ffffff;  /* White background on focus */
+}
+
+input[type="submit"] {
+    font-size: 1rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #2b6cb0, #3182ce);  /* Gradient blue */
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+/* Containers */
+.main-container {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 2.5rem;
+    max-width: 650px;
+    margin: 4rem auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main-container h1 {
+    margin-bottom: 1.8rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input[type="submit"] {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.5rem;
+    }
+}

@@ -1,0 +1,144 @@
+@charset "ISO-8859-1";
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Light gray background */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    height: 100%;
+    width: 280px;
+    position: fixed;
+    background-color: #2d3748; /* Darker shade of blue-gray for sidebar */
+    padding-top: 60px;
+    margin-top: -40px;
+    box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Sidebar Links Styling */
+.sidebar a {
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #cbd5e0; /* Light gray color for text */
+    display: block;
+    transition: background-color 0.3s, transform 0.3s;
+    border-left: 4px solid transparent; /* Add left border for visual emphasis */
+}
+
+/* Sidebar Hover Effect */
+.sidebar a:hover {
+    background-color: #4a90e2; /* Blue color for hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    border-left: 4px solid #fbbf24; /* Add yellow border on hover */
+}
+
+/* Sidebar Icon Styling */
+.sidebar i {
+    margin-right: 15px;
+    color: #fbbf24; /* Golden color for icons */
+}
+
+/* Content Area */
+.content {
+    margin-left: 280px; /* Adjusted margin-left to match the sidebar width */
+    padding: 30px;
+    background-color: #ffffff;
+    min-height: 100vh; /* Ensure content stretches full height */
+}
+
+/* Headings Styling */
+h2 {
+    color: #2d3748; /* Darker text color for headings */
+}
+
+/* Form Styling */
+form {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px; /* Slightly wider form */
+    margin-left: 20px;
+    background-color: #ffffff; /* White background for form */
+}
+
+/* Label Styling */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4a90e2; /* Blue color for labels */
+}
+
+/* Input Styling */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ddd; /* Lighter gray border */
+    border-radius: 4px;
+    background-color: #f7fafc; /* Light input background */
+    transition: border 0.3s ease;
+}
+
+/* Input Focus Effect */
+input:focus {
+    border: 1px solid #4a90e2; /* Blue border on focus */
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    background-color: #fbbf24; /* Bright yellow button */
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #f59e0b; /* Darker yellow for hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 250px; /* Smaller sidebar on mobile */
+    }
+
+    .content {
+        margin-left: 250px; /* Adjust content area to fit */
+    }
+
+    form {
+        width: 280px; /* Adjust form width */
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 220px; /* Even smaller sidebar */
+    }
+
+    .content {
+        margin-left: 220px; /* Adjust content for mobile */
+    }
+
+    form {
+        width: 100%; /* Form takes full width on mobile */
+        margin-left: 0;
+    }
+
+    button {
+        padding: 10px;
+    }
+}

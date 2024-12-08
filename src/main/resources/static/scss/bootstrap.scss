@@ -1,0 +1,26 @@
+/******* Customized Bootstrap ********/
+
+$primary: #FF6347;          // Tomato Red for the primary color (replacing green)
+$secondary: #FFC107;        // Amber for secondary color
+$light: #F5F5F5;            // Light gray for light backgrounds
+$dark: #131313;             // Dark for the background and text
+$body-color: #dcdcdc;       // Light gray for body text
+$headings-color: #FF6347;   // Heading color now matches the primary color
+$headings-font-family: 'Roboto', sans-serif;  // Font family for headings
+
+$font-family-sans-serif: 'Poppins', sans-serif;  // Font family for body text (matching previous CSS)
+
+$headings-font-weight: 700;  // Heavy weight for headings to stand out
+
+$display-font-weight: 800;   // Higher weight for display text for better emphasis
+
+$enable-responsive-font-sizes: true;  // Responsive font sizes for better adaptability
+
+$border-radius: 16px;       // Custom border radius to match the previous design (rounded corners)
+
+$link-decoration: none;     // Links will have no underline by default
+
+$enable-negative-margins: true;  // Enable negative margins for design flexibility
+
+// Import Bootstrap's core SCSS
+@import "bootstrap/scss/bootstrap";

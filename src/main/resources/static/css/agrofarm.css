@@ -1,0 +1,112 @@
+/* General Table Styling */
+table {
+  border: 2px solid #e2e8f0; /* Light blue-gray border */
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin: 1em 0 1.5em;
+  color: #2b2d42; /* Darker gray for captions */
+}
+
+table tr {
+  background-color: #f9fafb; /* Very light gray background for rows */
+  border: 1px solid #d1d5db; /* Light gray border for rows */
+  padding: .35em;
+  color: #2b2d42; /* Darker text color for readability */
+}
+
+table th, table td {
+  padding: .75em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table th {
+  font-size: 1em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  background-color: #4f46e5; /* New purple color for header */
+  color: white;
+  border-bottom: 2px solid #c7d2fe; /* Lighter purple border under header */
+}
+
+table td {
+  font-size: 0.95em;
+  color: #4a5568; /* Lighter text color for rows */
+  border-top: 1px solid #e2e8f0; /* Lighter border between rows */
+}
+
+/* Hover effect for rows */
+table tr:hover {
+  background-color: #f3f4f6; /* Light hover effect */
+  cursor: pointer;
+}
+
+table th:hover {
+  background-color: #4338ca; /* Darker purple when hovering over headers */
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  table tr {
+    border-bottom: 3px solid #e2e8f0; /* Light border between rows on mobile */
+    display: block;
+    margin-bottom: .625em;
+    color: #333;
+  }
+
+  table td {
+    border-bottom: 1px solid #e2e8f0;
+    display: block;
+    font-size: .9em;
+    text-align: right;
+    padding: 10px;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    color: #4f46e5; /* Matching purple for labels */
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+/* General styling for body */
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f7f6; /* Soft light background */
+}

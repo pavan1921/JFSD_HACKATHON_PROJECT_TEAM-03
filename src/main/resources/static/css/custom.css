@@ -1,0 +1,196 @@
+/* General Heading Styles */
+h2, h3, h4, h5, h6 {
+    margin: 5px 0;
+}
+
+h2 {
+    color: #2a4365; /* Darker blue */
+    text-align: left;
+}
+
+/* Body Background and Font Styling */
+body {
+    background-color: #f4f4f9; /* Soft light gray background */
+    background-attachment: scroll;
+    background-image: url(../img/layout/background.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    font-family: "Lato", sans-serif;
+}
+
+/* Subprogram Titles */
+.subprograms .title {
+    background: #4A90E2; /* Blue background */
+    color: #FFF;
+    font-size: 1.4em;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Heading and Title Text Alignment for Smaller Screens */
+@media only screen and (max-width: 1340px) {
+    .button, h1.title, h3.title {
+        text-align: center;
+    }
+}
+
+h1.title, h3.title, nav.top>ul {
+    text-transform: uppercase;
+}
+
+h3.title {
+    font-size: 1em;
+    margin: 10px 0;
+    padding: 5px 0;
+    background: #f7fafc; /* Light gray background */
+    color: #333;
+}
+
+/* Text Transform and Indentation for Titles */
+h1.title, h3.title {
+    text-indent: 10px;
+    text-transform: uppercase;
+}
+
+h2, h3, h4, h5, h6 {
+    margin: 5px 0 0;
+}
+
+/* Image Styling */
+img {
+    border: 0;
+}
+
+img[Attributes Style] {
+    width: 300px;
+    aspect-ratio: auto 300 / 123;
+    height: 123px;
+}
+
+img.left {
+    float: left;
+    margin: 10px 10px 10px 0;
+}
+
+.program-country-flags {
+    text-align: right;
+    display: block;
+    margin-right: 5px;
+}
+
+.program-country-flags img.flag {
+    max-width: 70px;
+    height: auto;
+}
+
+/* Subprograms Wrapper Styling */
+.subprograms-wrapper {
+    background: linear-gradient(#7f9cf5, #a1c4fd); /* Gradient from light blue to a lighter blue */
+    border-radius: 10px;
+    border: 1px solid #e2e8f0; /* Soft border */
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.button {
+    width: auto;
+    font-size: 1em;
+    font-weight: 400;
+    border-radius: 5px;
+    border: none;
+    padding: 12px 24px;
+    background-color: #5c6bc0; /* Blue color */
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #3f51b5; /* Darker blue on hover */
+}
+
+/* Button Alignment */
+@media only screen and (max-width: 1340px) {
+    .button {
+        width: 99%;
+        padding: 12px 0;
+        margin: 10px auto 0;
+    }
+}
+
+/* Link Styling */
+a {
+    color: #1e40af; /* Darker blue */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0d1a60; /* Darker hover effect */
+    text-decoration: underline;
+}
+
+/* General Paragraph Styling */
+p {
+    margin: 5px 0 20px;
+}
+
+/* Program Country Title */
+.program-country-title {
+    margin: 0 5px 0 0;
+    color: #555;
+}
+
+/* Content Wrapper Styling for Responsive Layout */
+@media only screen and (max-width: 463px) {
+    #content-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    #content-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #content-wrapper {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    #content-wrapper {
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
+@media only screen and (max-width: 1340px) {
+    #content-wrapper {
+        overflow: visible;
+        float: none;
+        display: block;
+        margin: 0 auto;
+        max-width: 1070px;
+        min-height: 400px;
+        width: 100%;
+    }
+
+    #content-wrapper, #content-wrapper-full {
+        overflow: hidden;
+        display: block;
+        width: 100%;
+    }
+}
+
+/* General Div Styling */
+div {
+    display: block;
+}

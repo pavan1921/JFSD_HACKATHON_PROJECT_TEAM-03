@@ -1,0 +1,177 @@
+/* Responsive CSS with Updated Colors */
+
+/* For screens up to 950px */
+@media screen and (max-width: 950px) { 
+    .nav-img { 
+        height: 30px; 
+    } 
+    .nav-option { 
+        gap: 40px; 
+    } 
+    .nav-option h3 { 
+        font-size: 18px; 
+        font-family: 'Arial', sans-serif;
+        color: #6C5B7B; /* Purple */
+    } 
+    .report-topic-heading, 
+    .item1, 
+    .items { 
+        width: 80%; /* Adjusted width */
+        font-family: 'Verdana', sans-serif;
+        color: #333; /* Dark Gray */
+    } 
+} 
+    
+/* For screens up to 850px */
+@media screen and (max-width: 850px) { 
+    .nav-img { 
+        height: 35px; 
+    } 
+    .nav-option { 
+        gap: 35px; 
+    } 
+    .nav-option h3 { 
+        font-size: 22px; 
+        font-family: 'Arial', sans-serif;
+        color: #FF6F61; /* Coral */
+    } 
+    .report-topic-heading, 
+    .item1, 
+    .items { 
+        width: 75%; /* Adjusted width */
+        color: #555; /* Lighter Gray */
+    } 
+    .navcontainer { 
+        width: 100vw; 
+        position: absolute; 
+        transition: all 0.6s ease-in-out; 
+        top: 0; 
+        left: -100vw; 
+    } 
+    .nav { 
+        width: 100%; 
+        position: absolute; 
+    } 
+    .navclose { 
+        left: 0; 
+    } 
+    .searchbar { 
+        display: none; 
+    } 
+    .main { 
+        padding: 40px 35px 30px 35px; 
+    } 
+    .searchbar2 { 
+        width: 100%; 
+        display: flex; 
+        margin-bottom: 35px; 
+        justify-content: center; 
+    } 
+    .searchbar2 input { 
+        width: 240px; 
+        height: 45px; 
+        border-radius: 50px 0 0 50px; 
+        background-color: #E8E8E8; /* Light Gray */
+        padding: 0 18px; 
+        font-size: 16px; 
+        border: 2px solid #FF6F61; /* Coral */
+    } 
+} 
+    
+/* For screens up to 490px */
+@media screen and (max-width: 490px) { 
+    .message { 
+        display: none; 
+    } 
+    .logosec { 
+        width: 100%; 
+        justify-content: space-between; 
+    } 
+    .logo { 
+        font-size: 18px; 
+        color: #FF6F61; /* Coral */
+    } 
+    .menuicn { 
+        height: 30px; 
+    } 
+    .nav-img { 
+        height: 28px; 
+    } 
+    .nav-option { 
+        gap: 22px; 
+    } 
+    .nav-option h3 { 
+        font-size: 14px; 
+        color: #6C5B7B; /* Purple */
+    } 
+    .nav-upper-options { 
+        gap: 18px; 
+    } 
+    .recent-Articles { 
+        font-size: 22px; 
+    } 
+    .report-topic-heading, 
+    .item1, 
+    .items { 
+        width: 60%; /* Adjusted width */
+    } 
+} 
+    
+/* For screens up to 400px */
+@media screen and (max-width: 400px) { 
+    .recent-Articles { 
+        font-size: 15px; 
+    } 
+    .view { 
+        width: 65px; 
+        font-size: 12px; 
+        height: 30px; 
+    } 
+    .report-header { 
+        height: 65px; 
+        padding: 12px 12px 7px 12px; 
+    } 
+    .searchbtn img { 
+        height: 22px; 
+    } 
+} 
+    
+/* For screens up to 320px */
+@media screen and (max-width: 320px) { 
+    .recent-Articles { 
+        font-size: 14px; 
+    } 
+    .view { 
+        width: 55px; 
+        font-size: 9px; 
+        height: 30px; 
+    } 
+    .report-header { 
+        height: 65px; 
+        padding: 12px 7px 7px 7px; 
+    } 
+    .t-op { 
+        font-size: 13px; 
+        color: #FF6F61; /* Coral */
+    } 
+    .t-op-nextlvl { 
+        font-size: 11px; 
+    } 
+    .report-topic-heading, 
+    .item1, 
+    .items { 
+        width: 270px; /* Adjusted width */
+    } 
+    .report-body { 
+        padding: 12px; 
+    } 
+    .label-tag { 
+        width: 75px; 
+    } 
+    .searchbtn { 
+        width: 45px; 
+    } 
+    .searchbar2 input { 
+        width: 190px; 
+    } 
+}

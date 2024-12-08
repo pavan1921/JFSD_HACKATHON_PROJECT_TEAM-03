@@ -1,0 +1,39 @@
+/* Close button style */
+.btn-close {
+  box-sizing: content-box;
+  width: 30px; /* Adjust width as per requirement */
+  height: 30px; /* Adjust height as per requirement */
+  padding: 0; /* Adjust padding as needed */
+  color: #000; /* Set button color */
+  background: transparent url('data:image/svg+xml;base64,...') center / 30px auto no-repeat; /* Replace URL with actual SVG icon */
+  border: 0; /* No border for button */
+  border-radius: 50%; /* Rounded shape for the button */
+  opacity: 0.5; /* Adjust opacity as needed */
+
+  /* Hover state */
+  &:hover {
+    color: #000; /* Hover color */
+    text-decoration: none;
+    opacity: 0.75; /* Hover opacity */
+  }
+
+  /* Focus state */
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2); /* Adjust focus shadow */
+    opacity: 1; /* Focus opacity */
+  }
+
+  /* Disabled state */
+  &:disabled,
+  &.disabled {
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.3; /* Adjust disabled opacity */
+  }
+}
+
+/* White close button variant */
+.btn-close-white {
+  filter: invert(1); /* Inverts color to white */
+}
